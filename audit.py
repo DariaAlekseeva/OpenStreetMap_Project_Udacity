@@ -21,25 +21,16 @@ expected = ["Street", "Avenue", "Boulevard", "Drive", "Court", "Place", "Square"
 # UPDATE THIS VARIABLE
 mapping = { "St": "Street",
             "St.": "Street",
-            "STREET" : "Street",
             "Rd.": "Road",
             "Rd" : "Road",
-            "ROAD" : "Road",
             "ROAD," : "Road",
-            "road" : "Road",
             "Ave": "Avenue",
-            "ground" : "Ground",
-            "lane" : "Lane",
-            "market" : "Market",
-            "passage" : "Passage",
-            "row" : "Row",
             "st" : "Street",
-            "street" : "Street",
-            "wharf" : "Wharf",
-            "turnstile" : "Turnstile"}
+            "Peninsular" : "Peninsula"}
 
 
 def audit_street_type(street_types, street_name):
+    street_name = street_name.title()
     m = street_type_re.search(street_name)
     if m:
         street_type = m.group()
