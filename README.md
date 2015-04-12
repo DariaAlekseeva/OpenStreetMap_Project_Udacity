@@ -1,3 +1,5 @@
+To see summary of project in your browser click [here](http://nbviewer.ipython.org/github/DariaAlekseeva/OpenStreetMap_Project_Udacity/blob/master/Mongo_Database.ipynb).  
+
 ##Project Overview
 
 I choose part of East London map from https://www.openstreetmap.org and use data munging techniques, such as assessing the quality of the data for validity, accuracy, completeness, consistency and uniformity, to clean the OpenStreetMap data for East London.
